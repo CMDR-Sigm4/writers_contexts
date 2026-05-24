@@ -202,3 +202,5 @@ Most of the value comes from plain text:
 You do not need to be a software developer to adapt this system. Plain English, or your own native language is enough if the instructions are explicit.
 
 The best advice is simple: do not be afraid to read the documentation. AI agents are not only for technical developers. They can be useful collaborators for writers, editors, narrative designers, worldbuilders, and game creators when the project gives them a clean memory to work with.
+
+![Visual User Guide](VISUAL_USER_GUIDE.svg)
