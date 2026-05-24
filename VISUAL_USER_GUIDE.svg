@@ -1,0 +1,203 @@
+<svg width="210mm" height="297mm" viewBox="0 0 1000 1414" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Writer Contexts visual user guide</title>
+  <desc id="desc">A full-bleed A4 visual guide to the Writer Contexts project structure, workflow, skills, and Claude/Codex compatibility.</desc>
+
+  <defs>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12213a"/>
+      <stop offset="0.62" stop-color="#17364d"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+      .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+      .h1 { font-size: 50px; font-weight: 850; fill: #ffffff; }
+      .h2 { font-size: 25px; font-weight: 820; fill: #101828; }
+      .h3 { font-size: 16px; font-weight: 820; fill: #101828; }
+      .eyebrow { font-size: 11px; font-weight: 850; letter-spacing: 1.8px; fill: #475569; }
+      .body { font-size: 13.5px; fill: #26364a; }
+      .small { font-size: 11.5px; fill: #334155; }
+      .tiny { font-size: 10px; fill: #475569; }
+      .white { fill: #ffffff; }
+      .hero-note { font-size: 14px; font-weight: 650; fill: #eaf2ff; }
+      .chip { font-size: 12px; font-weight: 850; fill: #ffffff; }
+      .folder { font-size: 14px; font-weight: 850; fill: #101828; }
+      .skill { font-size: 13px; font-weight: 820; fill: #101828; }
+    </style>
+  </defs>
+
+  <!-- Full-bleed A4 canvas: 1000 x 1414 -->
+  <rect width="1000" height="1414" fill="#f4f7fa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1000" height="230" fill="url(#hero)"/>
+  <text x="64" y="76" class="sans h1">Writer Contexts</text>
+  <text x="66" y="116" class="sans" font-size="21" font-weight="650" fill="#dcecff">A modular memory system for AI-assisted narrative writing</text>
+  <text x="66" y="160" class="sans hero-note">Give the agent only what the current scene needs: less noise, lower cost, fewer continuity mistakes.</text>
+
+  <rect x="760" y="54" width="164" height="34" rx="17" fill="#14b8a6"/>
+  <text x="842" y="76" class="sans chip" text-anchor="middle">Claude + Codex</text>
+  <rect x="760" y="102" width="164" height="34" rx="17" fill="#3b82f6"/>
+  <text x="842" y="124" class="sans chip" text-anchor="middle">Markdown first</text>
+  <rect x="760" y="150" width="164" height="34" rx="17" fill="#f97316"/>
+  <text x="842" y="172" class="sans chip" text-anchor="middle">Human writing</text>
+
+  <!-- Core principle -->
+  <g transform="translate(64 268)">
+    <text x="0" y="0" class="sans eyebrow">CORE PRINCIPLE</text>
+    <text x="0" y="34" class="sans h2">Context is working memory, not storage.</text>
+    <rect x="0" y="58" width="872" height="76" rx="10" fill="#ffffff" stroke="#cbd7e4"/>
+    <text x="26" y="90" class="sans body">Load narrow context on purpose: active scene, present characters, current location, relationships, style, and rules.</text>
+    <text x="26" y="116" class="sans body">Avoid dumping the whole project into every request. Smaller context means faster, cheaper collaboration.</text>
+  </g>
+
+  <!-- Project map -->
+  <g transform="translate(64 446)">
+    <text x="0" y="0" class="sans eyebrow">1. PROJECT MAP</text>
+    <text x="0" y="32" class="sans h2">One folder, one responsibility.</text>
+
+    <g transform="translate(0 56)">
+      <rect width="200" height="82" rx="10" fill="#eaf4ff" stroke="#8cc4ff"/>
+      <rect x="18" y="18" width="34" height="24" rx="6" fill="#2563eb"/>
+      <text x="66" y="35" class="mono folder">00_meta</text>
+      <text x="18" y="62" class="sans small">Rules, index, style.</text>
+    </g>
+    <g transform="translate(224 56)">
+      <rect width="200" height="82" rx="10" fill="#ecfdf3" stroke="#86d19a"/>
+      <rect x="18" y="18" width="34" height="24" rx="6" fill="#16a34a"/>
+      <text x="66" y="35" class="mono folder">01_world</text>
+      <text x="18" y="62" class="sans small">Lore and constraints.</text>
+    </g>
+    <g transform="translate(448 56)">
+      <rect width="200" height="82" rx="10" fill="#fff4e8" stroke="#fdba74"/>
+      <rect x="18" y="18" width="34" height="24" rx="6" fill="#ea580c"/>
+      <text x="66" y="35" class="mono folder">02_characters</text>
+      <text x="18" y="62" class="sans small">Profiles and relations.</text>
+    </g>
+    <g transform="translate(672 56)">
+      <rect width="200" height="82" rx="10" fill="#fbf0ff" stroke="#d8b4fe"/>
+      <rect x="18" y="18" width="34" height="24" rx="6" fill="#9333ea"/>
+      <text x="66" y="35" class="mono folder">03_locations</text>
+      <text x="18" y="62" class="sans small">Places and senses.</text>
+    </g>
+
+    <g transform="translate(0 156)">
+      <rect width="200" height="82" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+      <rect x="18" y="18" width="34" height="24" rx="6" fill="#475569"/>
+      <text x="66" y="35" class="mono folder">04_plot</text>
+      <text x="18" y="62" class="sans small">Outline and timeline.</text>
+    </g>
+    <g transform="translate(224 156)">
+      <rect width="200" height="82" rx="10" fill="#fff1f3" stroke="#fda4af"/>
+      <rect x="18" y="18" width="34" height="24" rx="6" fill="#e11d48"/>
+      <text x="66" y="35" class="mono folder">05_items</text>
+      <text x="18" y="62" class="sans small">Objects and states.</text>
+    </g>
+    <g transform="translate(448 156)">
+      <rect width="200" height="82" rx="10" fill="#e9fbff" stroke="#67e8f9"/>
+      <rect x="18" y="18" width="34" height="24" rx="6" fill="#0891b2"/>
+      <text x="66" y="35" class="mono folder">06_active</text>
+      <text x="18" y="62" class="sans small">Current workbench.</text>
+    </g>
+    <g transform="translate(672 156)">
+      <rect width="200" height="82" rx="10" fill="#fffbe6" stroke="#facc15"/>
+      <rect x="18" y="18" width="34" height="24" rx="6" fill="#ca8a04"/>
+      <text x="66" y="35" class="mono folder">07_manuscript</text>
+      <text x="18" y="62" class="sans small">Final text vault.</text>
+    </g>
+  </g>
+
+  <!-- Workflow -->
+  <g transform="translate(64 746)">
+    <text x="0" y="0" class="sans eyebrow">2. WRITING WORKFLOW</text>
+    <text x="0" y="32" class="sans h2">Prepare, draft, ask, update memory.</text>
+    <rect x="0" y="56" width="872" height="116" rx="10" fill="#ffffff" stroke="#cbd7e4"/>
+
+    <circle cx="66" cy="114" r="34" fill="#2563eb"/>
+    <text x="66" y="124" class="sans" font-size="25" font-weight="850" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="116" y="102" class="sans h3">Set scene state</text>
+    <text x="116" y="126" class="sans small">Who, where, goal, chapter.</text>
+
+    <line x1="298" y1="114" x2="374" y2="114" stroke="#d5dde8" stroke-width="4"/>
+    <circle cx="426" cy="114" r="34" fill="#16a34a"/>
+    <text x="426" y="124" class="sans" font-size="25" font-weight="850" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="476" y="102" class="sans h3">Write the draft</text>
+    <text x="476" y="126" class="sans small">Use working_draft.md.</text>
+
+    <line x1="600" y1="114" x2="650" y2="114" stroke="#d5dde8" stroke-width="4"/>
+    <circle cx="704" cy="114" r="34" fill="#ea580c"/>
+    <text x="704" y="124" class="sans" font-size="25" font-weight="850" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="754" y="102" class="sans h3">Invoke skills</text>
+    <text x="754" y="126" class="sans small">Update memory.</text>
+  </g>
+
+  <!-- Skills -->
+  <g transform="translate(64 968)">
+    <text x="0" y="0" class="sans eyebrow">3. SKILL REFERENCE</text>
+    <text x="0" y="32" class="sans h2">Automations keep continuity synchronized.</text>
+
+    <g transform="translate(0 58)">
+      <rect width="270" height="128" rx="10" fill="#ffffff" stroke="#bfdbfe"/>
+      <rect x="18" y="18" width="92" height="24" rx="12" fill="#2563eb"/>
+      <text x="64" y="34" class="sans chip" text-anchor="middle">Draft flow</text>
+      <text x="18" y="66" class="mono skill">new-chapter</text>
+      <text x="18" y="90" class="mono skill">change-scene</text>
+      <text x="150" y="66" class="mono skill">review-draft</text>
+      <text x="150" y="90" class="mono skill">close-chapter</text>
+    </g>
+
+    <g transform="translate(301 58)">
+      <rect width="270" height="128" rx="10" fill="#ffffff" stroke="#bbf7d0"/>
+      <rect x="18" y="18" width="92" height="24" rx="12" fill="#16a34a"/>
+      <text x="64" y="34" class="sans chip" text-anchor="middle">Creation</text>
+      <text x="18" y="66" class="mono skill">create-character</text>
+      <text x="18" y="90" class="mono skill">create-location</text>
+      <text x="150" y="66" class="mono skill">create-world</text>
+      <text x="150" y="90" class="mono skill">extract-image</text>
+    </g>
+
+    <g transform="translate(602 58)">
+      <rect width="270" height="128" rx="10" fill="#ffffff" stroke="#fecdd3"/>
+      <rect x="18" y="18" width="92" height="24" rx="12" fill="#e11d48"/>
+      <text x="64" y="34" class="sans chip" text-anchor="middle">Memory</text>
+      <text x="18" y="62" class="mono skill">analyze-chapter</text>
+      <text x="18" y="84" class="mono skill">extract-manuscript</text>
+      <text x="18" y="106" class="mono skill">update-timeline</text>
+      <text x="162" y="62" class="mono skill">update-relations</text>
+      <text x="162" y="84" class="mono skill">update-items</text>
+    </g>
+
+    <g transform="translate(0 214)">
+      <rect width="270" height="104" rx="10" fill="#ffffff" stroke="#fed7aa"/>
+      <rect x="18" y="18" width="92" height="24" rx="12" fill="#ea580c"/>
+      <text x="64" y="34" class="sans chip" text-anchor="middle">Sessions</text>
+      <text x="18" y="70" class="mono skill">save-context</text>
+      <text x="150" y="70" class="mono skill">restore-context</text>
+    </g>
+
+    <g transform="translate(301 214)">
+      <rect width="270" height="104" rx="10" fill="#ffffff" stroke="#c4b5fd"/>
+      <rect x="18" y="18" width="92" height="24" rx="12" fill="#7c3aed"/>
+      <text x="64" y="34" class="sans chip" text-anchor="middle">Visuals</text>
+      <text x="18" y="70" class="mono skill">generate-gantt</text>
+      <text x="150" y="70" class="mono skill">visual-schema</text>
+    </g>
+
+    <g transform="translate(602 214)">
+      <rect width="270" height="104" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+      <rect x="18" y="18" width="92" height="24" rx="12" fill="#475569"/>
+      <text x="64" y="34" class="sans chip" text-anchor="middle">System</text>
+      <text x="18" y="70" class="mono skill">init-structure</text>
+      <text x="162" y="70" class="mono skill" fill="#b91c1c">reset-project</text>
+    </g>
+  </g>
+
+  <!-- Compatibility footer -->
+  <g transform="translate(64 1330)">
+    <rect width="872" height="58" rx="10" fill="#0f172a"/>
+    <text x="24" y="26" class="sans" font-size="16" font-weight="850" fill="#ffffff">Compatible with Claude and Codex</text>
+    <text x="24" y="46" class="sans tiny" fill="#e2e8f0">Shared JavaScript lives in shared/skill-scripts/. Wrappers set SKILL_RUNTIME=claude or SKILL_RUNTIME=codex.</text>
+    <rect x="702" y="13" width="142" height="32" rx="16" fill="#14b8a6"/>
+    <text x="773" y="34" class="sans chip" text-anchor="middle">No coding required</text>
+  </g>
+</svg>
