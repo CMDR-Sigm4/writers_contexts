@@ -4,9 +4,7 @@ A modular context-management template for human writers using AI agents with Cla
 
 This project is not meant to automate storytelling or replace human authors. It is meant to help writers keep long-form narrative projects coherent while giving the AI agent only the context it actually needs.
 
-Repository link:
-
-[GITHUB_LINK_PLACEHOLDER]
+Repository link: https://github.com/CMDR-Sigm4/writers_contexts
 
 ## Why This Exists
 
