@@ -1,0 +1,49 @@
+# ─── OS / editor artifacts ─────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ─── Generated visual schemas (regenerable with create-visual-schema) ──────────
+00_meta/architecture_schema.svg
+04_plot/timeline_gantt.md
+
+# ─── Claude auto-memory ────────────────────────────────────────────────────────
+.claude/memory/
+
+# ─── Local Codex runtime/cache ─────────────────────────────────────────────────
+# Do not ignore .codex/skills/: it contains versioned project Codex skills.
+# Do not ignore shared/skill-scripts/: it contains versioned shared skill code.
+.codex/memory/
+.codex/sessions/
+.codex/cache/
+.codex/logs/
+.codex/tmp/
+
+# ─── Versioned agent/project infrastructure ───────────────────────────────────
+# These files are part of the reusable template and must be published.
+!.claude/
+!.claude/settings.json
+!.claude/skills/
+!.claude/skills/**
+!.codex/
+!.codex/config.toml
+!.codex/skills/
+!.codex/skills/**
+!shared/
+!shared/skill-scripts/
+!shared/skill-scripts/**
+!README.md
+!USER_GUIDE.md
+!VISUAL_USER_GUIDE.svg
+
+# ─── Skill log (generated at runtime) ──────────────────────────────────────────
+skill.log
+.vscode
+.vscode/
+.vscode/*
